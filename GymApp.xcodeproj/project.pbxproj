@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ADDE17F727682D6D00E146A3 /* UserDefaultDatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADDE17F627682D6D00E146A3 /* UserDefaultDatabaseManager.swift */; };
+		ADDE17F927682EBB00E146A3 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADDE17F827682EBB00E146A3 /* Constants.swift */; };
+		ADDE17FC27682F0000E146A3 /* Workout.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADDE17FB27682F0000E146A3 /* Workout.swift */; };
+		ADDE1804276830AC00E146A3 /* GymAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADDE1803276830AC00E146A3 /* GymAppTests.swift */; };
+		ADDE180B276833D200E146A3 /* AppManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADDE180A276833D200E146A3 /* AppManager.swift */; };
 		DAF564DB27679A23002C0874 /* GymAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF564CB27679A1E002C0874 /* GymAppApp.swift */; };
 		DAF564DC27679A23002C0874 /* GymAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF564CB27679A1E002C0874 /* GymAppApp.swift */; };
 		DAF564DD27679A23002C0874 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF564CC27679A1E002C0874 /* MainView.swift */; };
@@ -19,7 +24,23 @@
 		DAF564F22767ECA8002C0874 /* ExerciseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF564F02767ECA8002C0874 /* ExerciseView.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		ADDE1805276830AC00E146A3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DAF564C627679A1D002C0874 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DAF564D127679A23002C0874;
+			remoteInfo = "GymApp (iOS)";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		ADDE17F627682D6D00E146A3 /* UserDefaultDatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultDatabaseManager.swift; sourceTree = "<group>"; };
+		ADDE17F827682EBB00E146A3 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		ADDE17FB27682F0000E146A3 /* Workout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Workout.swift; sourceTree = "<group>"; };
+		ADDE1801276830AC00E146A3 /* GymAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GymAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADDE1803276830AC00E146A3 /* GymAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GymAppTests.swift; sourceTree = "<group>"; };
+		ADDE180A276833D200E146A3 /* AppManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppManager.swift; sourceTree = "<group>"; };
 		DAF564CB27679A1E002C0874 /* GymAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GymAppApp.swift; sourceTree = "<group>"; };
 		DAF564CC27679A1E002C0874 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		DAF564CD27679A23002C0874 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -31,6 +52,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		ADDE17FE276830AC00E146A3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DAF564CF27679A23002C0874 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -48,12 +76,49 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		ADDE17F427682C9B00E146A3 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				ADDE17F627682D6D00E146A3 /* UserDefaultDatabaseManager.swift */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
+		ADDE17F527682CA900E146A3 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				ADDE180A276833D200E146A3 /* AppManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		ADDE17FA27682EEC00E146A3 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				ADDE17FB27682F0000E146A3 /* Workout.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		ADDE1802276830AC00E146A3 /* GymAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				ADDE1803276830AC00E146A3 /* GymAppTests.swift */,
+			);
+			path = GymAppTests;
+			sourceTree = "<group>";
+		};
 		DAF564C527679A1D002C0874 = {
 			isa = PBXGroup;
 			children = (
+				ADDE17FA27682EEC00E146A3 /* Classes */,
+				ADDE17F827682EBB00E146A3 /* Constants.swift */,
+				ADDE17F527682CA900E146A3 /* Managers */,
+				ADDE17F427682C9B00E146A3 /* Database */,
 				DAF564EF2767D17D002C0874 /* View */,
 				DAF564CA27679A1E002C0874 /* Shared */,
 				DAF564D927679A23002C0874 /* macOS */,
+				ADDE1802276830AC00E146A3 /* GymAppTests */,
 				DAF564D327679A23002C0874 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -72,6 +137,7 @@
 			children = (
 				DAF564D227679A23002C0874 /* GymApp.app */,
 				DAF564D827679A23002C0874 /* GymApp.app */,
+				ADDE1801276830AC00E146A3 /* GymAppTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -97,6 +163,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		ADDE1800276830AC00E146A3 /* GymAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ADDE1807276830AC00E146A3 /* Build configuration list for PBXNativeTarget "GymAppTests" */;
+			buildPhases = (
+				ADDE17FD276830AC00E146A3 /* Sources */,
+				ADDE17FE276830AC00E146A3 /* Frameworks */,
+				ADDE17FF276830AC00E146A3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ADDE1806276830AC00E146A3 /* PBXTargetDependency */,
+			);
+			name = GymAppTests;
+			productName = GymAppTests;
+			productReference = ADDE1801276830AC00E146A3 /* GymAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		DAF564D127679A23002C0874 /* GymApp (iOS) */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = DAF564E327679A23002C0874 /* Build configuration list for PBXNativeTarget "GymApp (iOS)" */;
@@ -138,9 +222,13 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1310;
+				LastSwiftUpdateCheck = 1300;
 				LastUpgradeCheck = 1310;
 				TargetAttributes = {
+					ADDE1800276830AC00E146A3 = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = DAF564D127679A23002C0874;
+					};
 					DAF564D127679A23002C0874 = {
 						CreatedOnToolsVersion = 13.1;
 					};
@@ -164,11 +252,19 @@
 			targets = (
 				DAF564D127679A23002C0874 /* GymApp (iOS) */,
 				DAF564D727679A23002C0874 /* GymApp (macOS) */,
+				ADDE1800276830AC00E146A3 /* GymAppTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		ADDE17FF276830AC00E146A3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DAF564D027679A23002C0874 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -188,14 +284,26 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		ADDE17FD276830AC00E146A3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADDE1804276830AC00E146A3 /* GymAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DAF564CE27679A23002C0874 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				DAF564F12767ECA8002C0874 /* ExerciseView.swift in Sources */,
+				ADDE17FC27682F0000E146A3 /* Workout.swift in Sources */,
 				DAF564DD27679A23002C0874 /* MainView.swift in Sources */,
 				DAF564ED2767CD94002C0874 /* WorkoutView.swift in Sources */,
+				ADDE17F727682D6D00E146A3 /* UserDefaultDatabaseManager.swift in Sources */,
 				DAF564DB27679A23002C0874 /* GymAppApp.swift in Sources */,
+				ADDE17F927682EBB00E146A3 /* Constants.swift in Sources */,
+				ADDE180B276833D200E146A3 /* AppManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,7 +320,66 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		ADDE1806276830AC00E146A3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DAF564D127679A23002C0874 /* GymApp (iOS) */;
+			targetProxy = ADDE1805276830AC00E146A3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		ADDE1808276830AC00E146A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Z3QKQ74BCM;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ChrisCampanelli.GymAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GymApp.app/GymApp";
+			};
+			name = Debug;
+		};
+		ADDE1809276830AC00E146A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Z3QKQ74BCM;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ChrisCampanelli.GymAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GymApp.app/GymApp";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 		DAF564E127679A23002C0874 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -444,6 +611,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		ADDE1807276830AC00E146A3 /* Build configuration list for PBXNativeTarget "GymAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADDE1808276830AC00E146A3 /* Debug */,
+				ADDE1809276830AC00E146A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		DAF564C927679A1E002C0874 /* Build configuration list for PBXProject "GymApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
