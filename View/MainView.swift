@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct MainView: View {
-    let workouts = AppManager.instance.workouts
+//    let workouts = AppManager.instance.workouts
     var body: some View {
         NavigationView {
             VStack(spacing: 50) {

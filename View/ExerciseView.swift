@@ -10,18 +10,16 @@ import SwiftUI
 struct ExerciseView: View {
     
     @State private var exercise = ""
-    @State private var numberOfSets = ""
-    @State private var numberOfReps = ""
+    @State private var numberOfSets = 3
+    @State private var numberOfReps = 8
     @State private var weight = ""
     
     var body: some View {
         Form {
             Section(header: Text("Exercise Information")) {
                 TextField("Exercise", text: $exercise)
-                TextField("Sets", text: $numberOfSets)
-                    .keyboardType(.decimalPad)
-                TextField("Reps", text: $numberOfReps)
-                    .keyboardType(.decimalPad)
+                Stepper("Sets: \(numberOfSets)", value: $numberOfSets, in: 1...6, step: 1)
+                Stepper("Reps: \(numberOfReps)", value: $numberOfReps, in: 1...20, step: 1)
                 TextField("Weight", text: $weight)
                     .keyboardType(.decimalPad)
             }
