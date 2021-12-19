@@ -28,8 +28,8 @@ struct MainView: View {
                         .cornerRadius(10)
                 })
             }
+            .navigationTitle("My Workouts")
         }
-        .navigationTitle("My Workouts")
     }
 }
 

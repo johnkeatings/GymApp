@@ -14,7 +14,6 @@ struct WorkoutView: View {
     
     var body: some View {
         VStack(spacing: 30) {
-            
             Text("Create Workout")
                 .bold()
                 .font(.title)
@@ -39,9 +38,12 @@ struct WorkoutView: View {
                     .foregroundColor(.white)
                     .cornerRadius(10)
             })
+            
+            Spacer()
         }
     }
 }
+
 
 struct WorkoutView_Previews: PreviewProvider {
     static var previews: some View {
