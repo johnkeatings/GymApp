@@ -9,39 +9,27 @@ import SwiftUI
 
 struct MainView: View {
 //    let workouts = AppManager.instance.workouts
+    var workouts = ["Workout 1", "Workout 2", "Workout 3", "Workout 4"]
     var body: some View {
         NavigationView {
-            VStack(spacing: 50) {
-                Section {
-                    NavigationLink(destination: WorkoutView(), label: {
-                        Text("Add Workout")
+            VStack {
+                List(workouts, id: \.self) {
+                        Text($0)
                             .bold()
-                            .frame(width: 140, height: 50)
-                            .background(Color.orange)
-                            .foregroundColor(.white)
-                            .cornerRadius(10)
-                    })
-                    VStack {
-                        Section {
-                            Text("Leg Workout")
-                                .font(.largeTitle)
-                                .bold()
-                            Image("deadlift")
-                                .resizable()
-                                .aspectRatio(contentMode: .fit)
-                            Text("Workout One")
-                        }
-                        .padding(10)
-                    }
-                    .frame(width: 370, height: 420)
-                    .background(Color.white)
-                    .cornerRadius(20)
-                    .shadow(radius: 20)
-
+                        Text("Description")
+                            .italic()
                 }
+                NavigationLink(destination: WorkoutView(), label: {
+                    Text("Add Workout")
+                        .bold()
+                        .frame(width: 200, height: 50)
+                        .background(Color.orange)
+                        .foregroundColor(.white)
+                        .cornerRadius(10)
+                })
             }
-            .navigationTitle("My Workouts")
         }
+        .navigationTitle("My Workouts")
     }
 }
 

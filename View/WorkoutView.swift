@@ -15,6 +15,10 @@ struct WorkoutView: View {
     var body: some View {
         VStack(spacing: 30) {
             
+            Text("Create Workout")
+                .bold()
+                .font(.title)
+            
             TextField("Workout Title", text: $nameOfWorkout)
                 .frame(width: 300, height: 50)
                 .border(Color.gray)

@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ExerciseView: View {
     
+    @State private var exercises = [String: String]()
     @State private var exercise = ""
     @State private var numberOfSets = 3
     @State private var numberOfReps = 8
